@@ -3,13 +3,18 @@
   "version": "0.0.0-0",
   "dependencies": {
     "express": "~3.4.0",
-    "express-persona": "~0.1.0"
+    "express-persona": "~0.1.0",
+    "q": "~0.9.7",
+    "moment": "~2.3.1"
   },
   "tosdr-files": "../tosdr.org/",
   "persona": {
     "audience": "http://localhost:8000",
     "verifyPath": "/persona/verify",
     "logoutPath": "/persona/logout"
+  },
+  "comments": {
+    "target": "data/comments/"
   },
   "domains": [
     "tosdr.org",

@@ -17,3 +17,7 @@ request came from the designated source. By default, this is `http://localhost:8
 Set the verifyPath and logoutPath corresponding to the assertion service URL
 configured for the tosdr.org files, appended with /verify and /logout,
 respectively.
+
+Now run `npm install` to install, then `node ./app/server.js` to start the
+server. Browse to `http://localhost:8000/comments.html` to submit a comment.
+They will appear in the data/comments folder in the server directory.

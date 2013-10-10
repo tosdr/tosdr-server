@@ -1,0 +1,11 @@
+{
+  "name": "tosdr-server",
+  "version": "0.0.0-0",
+  "dependencies": {
+    "express": "~3.4.0"
+  },
+  "domains": [
+    "tosdr.org",
+    "www.tosdr.org"
+  ]
+}

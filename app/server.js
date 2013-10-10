@@ -2,7 +2,7 @@
 
 var fs = require('fs'), path = require('path');
 var express = require('express');
-var persona = require('express-persona')
+var persona = require('express-persona');
 
 var app = express();
 var config = require('config');

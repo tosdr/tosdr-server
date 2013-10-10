@@ -16,8 +16,8 @@
   "comments": {
     "target": "data/comments/"
   },
-  "domains": [
-    "tosdr.org",
-    "www.tosdr.org"
-  ]
+  "jshintConfig": {
+    "node": true,
+    "smarttabs": true
+  }
 }

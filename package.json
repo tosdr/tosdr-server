@@ -2,14 +2,14 @@
   "name": "tosdr-server",
   "version": "0.0.0-0",
   "dependencies": {
-    "express": "~3.4.0",
+    "express": "~3.4.2",
     "express-persona": "~0.1.0",
     "q": "~0.9.7",
-    "moment": "~2.3.1"
+    "moment": "~2.3.1",
+    "cors": "~2.1.0"
   },
-  "tosdr-files": "../tosdr.org/",
   "persona": {
-    "audience": "http://localhost:8000",
+    "audience": "http://localhost:8001",
     "verifyPath": "/persona/verify",
     "logoutPath": "/persona/logout"
   },

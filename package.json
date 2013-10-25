@@ -8,6 +8,10 @@
     "moment": "~2.3.1",
     "cors": "~2.1.0"
   },
+  "tosdr-files": {
+    "location": "../tosdr.org",
+    "serve": false
+  },
   "persona": {
     "audience": "http://localhost:8001",
     "verifyPath": "/persona/verify",

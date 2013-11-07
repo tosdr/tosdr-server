@@ -19,7 +19,6 @@ app.use(express.bodyParser())
 persona(app, config.persona);
 
 app.use('/post/comment', require('saveComments'));
-app.use('/get/services', require('getServices'));
 
 app.listen(8000);
 console.info('Listening at port 8000...');

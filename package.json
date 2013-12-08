@@ -13,7 +13,7 @@
     "serve": false
   },
   "persona": {
-    "audience": "http://localhost:8001",
+    "audience": "http://tosdr.org",
     "verifyPath": "/persona/verify",
     "logoutPath": "/persona/logout"
   },

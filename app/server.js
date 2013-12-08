@@ -21,5 +21,5 @@ persona(app, config.persona);
 app.use('/post/comment', require('saveComments'));
 app.use('/get/pendingpoints', require('getPendingpoints'));
 
-app.listen(8000);
-console.info('Listening at port 8000...');
+app.listen(4343);
+console.info('Listening at port 4343...');

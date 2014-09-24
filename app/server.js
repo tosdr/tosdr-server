@@ -1,6 +1,7 @@
 'use strict';
 
 var fs = require('fs'), path = require('path');
+var https = require('https');
 var express = require('express');
 var persona = require('express-persona');
 var cors = require('cors');
@@ -21,5 +22,14 @@ persona(app, config.persona);
 app.use('/post/comment', require('saveComments'));
 app.use('/get/pendingpoints', require('getPendingpoints'));
 
-app.listen(4343);
+if (config['https']) {
+  https.createServer({
+    key: fs.readFileSync(path.resolve(__dirname, '../', config['https'].key)),
+    cert: fs.readFileSync(path.resolve(__dirname, '../', config['https'].cert)),
+    ca: fs.readFileSync(path.resolve(__dirname, '../', config['https'].ca))
+  }, app).listen(4343);
+} else {
+  app.listen(4343);
+}
+
 console.info('Listening at port 4343...');

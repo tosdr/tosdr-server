@@ -12,6 +12,11 @@
     "location": "../tosdr.org",
     "serve": false
   },
+  "https": {
+    "key": "cert/tls.key",
+    "cert": "cert/tls.cert",
+    "ca": "cert/ca.pem"
+  },
   "persona": {
     "audience": "http://tosdr.org",
     "verifyPath": "/persona/verify",

@@ -18,7 +18,7 @@
     "ca": "cert/ca.pem"
   },
   "persona": {
-    "audience": "http://tosdr.org",
+    "audience": "https://tosdr.org",
     "verifyPath": "/persona/verify",
     "logoutPath": "/persona/logout"
   },

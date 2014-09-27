@@ -19,7 +19,7 @@ app.use(express.bodyParser())
    .use(cors({origin: config.persona.audience, credentials: true}));
 persona(app, config.persona);
 
-app.use('/post/comment', require('saveComments'));
+app.use('/post/point', require('saveComments'));
 app.use('/get/pendingpoints', require('getPendingpoints'));
 
 if (config['https']) {

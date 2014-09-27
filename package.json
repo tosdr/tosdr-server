@@ -12,13 +12,18 @@
     "location": "../tosdr.org",
     "serve": false
   },
+  "https": {
+    "key": "cert/tls.key",
+    "cert": "cert/tls.cert",
+    "ca": "cert/ca.pem"
+  },
   "persona": {
-    "audience": "http://localhost:8001",
+    "audience": "https://tosdr.org",
     "verifyPath": "/persona/verify",
     "logoutPath": "/persona/logout"
   },
   "comments": {
-    "target": "data/comments/"
+    "target": "../tosdr.org/comments/"
   },
   "jshintConfig": {
     "node": true,

@@ -23,7 +23,7 @@
     "logoutPath": "/persona/logout"
   },
   "comments": {
-    "target": "../tosdr.org/comments/"
+    "target": "../comments/"
   },
   "jshintConfig": {
     "node": true,
